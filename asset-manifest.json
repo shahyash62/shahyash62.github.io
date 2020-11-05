@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/shahyash62.github.io/static/css/main.2415b295.chunk.css",
+    "main.js": "/shahyash62.github.io/static/js/main.ddbe681c.chunk.js",
+    "main.js.map": "/shahyash62.github.io/static/js/main.ddbe681c.chunk.js.map",
+    "runtime-main.js": "/shahyash62.github.io/static/js/runtime-main.53ef76b9.js",
+    "runtime-main.js.map": "/shahyash62.github.io/static/js/runtime-main.53ef76b9.js.map",
+    "static/js/2.d1d175d5.chunk.js": "/shahyash62.github.io/static/js/2.d1d175d5.chunk.js",
+    "static/js/2.d1d175d5.chunk.js.map": "/shahyash62.github.io/static/js/2.d1d175d5.chunk.js.map",
+    "index.html": "/shahyash62.github.io/index.html",
+    "precache-manifest.2b197d5390d3d57b7d960b04aa850957.js": "/shahyash62.github.io/precache-manifest.2b197d5390d3d57b7d960b04aa850957.js",
+    "service-worker.js": "/shahyash62.github.io/service-worker.js",
+    "static/css/main.2415b295.chunk.css.map": "/shahyash62.github.io/static/css/main.2415b295.chunk.css.map",
+    "static/js/2.d1d175d5.chunk.js.LICENSE.txt": "/shahyash62.github.io/static/js/2.d1d175d5.chunk.js.LICENSE.txt",
+    "static/media/resume.pdf": "/shahyash62.github.io/static/media/resume.24629504.pdf",
+    "static/media/screenshot.jpg": "/shahyash62.github.io/static/media/screenshot.31f36fa9.jpg",
+    "static/media/screenshot2.jpg": "/shahyash62.github.io/static/media/screenshot2.e7658b27.jpg",
+    "static/media/screenshot3.jpg": "/shahyash62.github.io/static/media/screenshot3.8244c5d0.jpg",
+    "static/media/screenshot4.jpg": "/shahyash62.github.io/static/media/screenshot4.c745d9db.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53ef76b9.js",
+    "static/js/2.d1d175d5.chunk.js",
+    "static/css/main.2415b295.chunk.css",
+    "static/js/main.ddbe681c.chunk.js"
+  ]
+}
