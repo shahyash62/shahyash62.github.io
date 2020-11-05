@@ -1,0 +1,115 @@
+$light: rgb(238, 255, 255);
+$dark: rgb(0, 17, 51);
+$dark-alpha: rgba(0, 17, 51, 0.1);
+$font-dark: rgb(0, 17, 51);
+
+.container {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgb(200, 201, 212), white);
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 80%;
+    max-width: 80%;
+    overflow: auto;
+    z-index: 1000;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.dataContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.panel {
+    position: relative;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: $dark-alpha;
+    border: 1px solid $dark;
+    margin: 1rem 0;
+}
+
+.panelSection {
+    margin: 1rem 0;
+}
+
+.panelHeadingSection {
+    color: $dark;
+    filter: brightness(120%);
+}
+
+.panelHeader {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.panelText {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.panelContentSection {
+    color: $font-dark;
+    // filter: brightness(50%);
+}
+
+.panelTextSmall {
+    margin: 0;
+    font-size: 1.5rem;
+    a {
+        font-size: 1.5rem;
+        color: $font-dark;
+        &:visited {
+            color: $font-dark;
+        }
+    }
+}
+
+.panelContactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: $dark-alpha;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contactButton {
+    border: 1px solid $dark;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    background: none;
+    color: $dark;
+    transition-duration: 0.3s;
+    a {
+        color: inherit;
+    }
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background: $dark;
+    }
+}
