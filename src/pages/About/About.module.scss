@@ -1,0 +1,121 @@
+$light: rgb(208, 255, 218);
+$dark: rgb(0, 101, 85);
+$dark-alpha: rgba(0, 101, 85, 0.05);
+$font-dark: rgb(0, 50, 42);
+// $font-dark: rgb(0, 50, 42)
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.container {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgb(208, 255, 218), white);
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 80%;
+    max-width: 80%;
+    overflow: auto;
+    z-index: 1000;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.dataContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.panel {
+    position: relative;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: $dark-alpha;
+    border: 1px solid $dark;
+    margin: 1rem 0;
+}
+
+.panelSection {
+    margin: 1rem 0;
+}
+
+.panelHeadingSection {
+    color: $dark;
+    filter: brightness(120%);
+}
+
+.panelHeader {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.panelText {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.panelContentSection {
+    color: $font-dark;
+    // filter: brightness(50%);
+}
+
+.panelTextSmall {
+    margin: 0;
+    font-size: 1.5rem;
+    a {
+        font-size: 1rem;
+        color: $font-dark;
+        &:visited {
+            color: $font-dark;
+        }
+    }
+}
+
+.iconList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    * {
+        margin: 7px;
+    }
+}
+
+.imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    margin: 1rem;
+    max-width: 200px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px -1px $dark;
+    border-radius: 1rem;
+    img {
+        position: relative;
+        z-index: -2;
+        display: block;
+        max-width: inherit;
+    }
+}

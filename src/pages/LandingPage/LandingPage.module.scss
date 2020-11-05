@@ -1,0 +1,56 @@
+$light: white;
+$dark: rgb(91, 177, 205);
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(lightblue, white);
+
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.nameContainer {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition-duration: 1s;
+    // position: fixed;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.fname {
+    margin: 0;
+    color: $light;
+    // animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.lname {
+    margin: 0;
+    color: $dark;
+    // animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
